@@ -1,3 +1,4 @@
+# Serkan Atak
 import re
 import numpy as np
 from googletrans import Translator
