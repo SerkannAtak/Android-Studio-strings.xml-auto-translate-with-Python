@@ -8,6 +8,7 @@ content = open("strings.xml").read() #open your file
 remove_trans, values, translated_texts, translated_all = [], [], [], []
 
 all_strings = re.findall('<string name="(.*)">(.*)</string>', content) #Get ID and values
+strings_with_transFalse = re.findall('<string name="(.*)" translatable="false">(.*)</string>', content) #Get ID and values
 
 for i in range(all_strings.__len__()): # finding the translatable="false" strings
     for k in range(strings_with_transFalse.__len__()):
